@@ -73,7 +73,7 @@ class TestTriangles(unittest.TestCase):
     def testIsoscelesTriangles3(self):
         self.assertEqual(classifyTriangle(7, 13, 7), 'Isosceles', '7,13,7 is a Isosceles Triangle')
 
-    #Test Invalid Inputs -------------------------------------------------------------------------
+    # Test Invalid Inputs -------------------------------------------------------------------------
     def testInvalidInputs1(self):
         self.assertEqual(classifyTriangle(-1, -1, -1), 'InvalidInput', '-1,-1,-1 is an Invalid Input')
 
@@ -82,6 +82,7 @@ class TestTriangles(unittest.TestCase):
 
     def testInvalidInputs3(self):
         self.assertEqual(classifyTriangle(0, 0, 0), 'InvalidInput', '0, 0, 0 is an Invalid Input')
+
 
 if __name__ == '__main__':
     print('Running unit tests')
