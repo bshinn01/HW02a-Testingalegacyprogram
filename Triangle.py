@@ -9,10 +9,11 @@ The primary goal of this file is to demonstrate a simple python program to class
 @author: rk
 """
 
-def classifyTriangle(a,b,c):
+
+def classifyTriangle(a, b, c):
     """
     Your correct code goes here...  Fix the faulty logic below until the code passes all of 
-    you test cases. 
+    your test cases.
     
     This function returns a string with the type of triangle from three integer values
     corresponding to the lengths of the three sides of the Triangle.
@@ -31,13 +32,13 @@ def classifyTriangle(a,b,c):
     if a > 200 or b > 200 or c > 200:
         return 'InvalidInput'
         
-    if a <= 0 or b <= b or c <= 0:
+    if a <= 0 or b <= 0 or c <= 0:
         return 'InvalidInput'
     
     # verify that all 3 inputs are integers  
     # Python's "isinstance(object,type) returns True if the object is of the specified type
-    if not(isinstance(a,int) and isinstance(b,int) and isinstance(c,int)):
-        return 'InvalidInput';
+    if not(isinstance(a, int) and isinstance(b, int) and isinstance(c, int)):
+        return 'InvalidInput'
       
     # This information was not in the requirements spec but 
     # is important for correctness
