@@ -29,7 +29,6 @@ class TestTriangles(unittest.TestCase):
     def testInvalidTriangles3(self):
         self.assertEqual(classifyTriangle(2, 4, 1), 'NotATriangle', '2,4,1 is Not a Triangle')
 
-
     # Test Right Triangles -----------------------------------------------------------------
     def testRightTriangle1(self):
         self.assertEqual(classifyTriangle(3, 4, 5), 'Right', '3,4,5 is a Right Triangle')
